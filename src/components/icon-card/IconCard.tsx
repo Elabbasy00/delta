@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import Avatar from "@mui/joy/Avatar";
 
@@ -8,7 +9,7 @@ import Typography from "@mui/joy/Typography";
 
 interface Props {
   item: {
-    icon: React.JSX.Element;
+    icon: React.ReactNode;
     name: string;
     subtitle: string;
     color: any;

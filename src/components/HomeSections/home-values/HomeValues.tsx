@@ -4,7 +4,6 @@ import IconCard from "../../icon-card/IconCard";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { GoShieldCheck } from "react-icons/go";
 import { FaGraduationCap } from "react-icons/fa";
-
 const data = [
   {
     id: 1,

@@ -1,3 +1,4 @@
+"use client";
 import PageHeader from "@/src/components/page-header/PageHeader";
 import ServiceCard from "@/src/components/service-card/ServiceCard";
 import { services } from "@/src/data/data";
