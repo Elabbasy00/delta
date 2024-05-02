@@ -30,7 +30,7 @@ function ServiceSlider() {
         }}
         modules={[Navigation, Pagination]}
       >
-        {services.map((item) => (
+        {services.slice(0, 5).map((item) => (
           <SwiperSlide key={item.id}>
             <ServiceCard item={item} />
           </SwiperSlide>

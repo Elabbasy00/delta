@@ -26,7 +26,9 @@ export default function ServiceCard({ item }: Props) {
             src={item.img}
             loading="lazy"
             alt=""
-            fill
+            width={100}
+            height={100}
+            sizes="100vw"
             style={{ width: "100%", height: "100%" }}
           />
         </AspectRatio>
@@ -49,7 +51,7 @@ export default function ServiceCard({ item }: Props) {
           </Typography>
         </MuiLink>
 
-        <Typography level="body-sm">{item.desc}</Typography>
+        <Typography level="body-sm">{item?.desc?.slice(0, 100)}...</Typography>
       </CardContent>
     </Card>
   );

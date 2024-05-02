@@ -11,12 +11,12 @@ function Hero() {
         fontWeight="lg"
         fontSize="clamp(1.875rem, 1.3636rem + 3.1818vw, 4rem)"
       >
-        <Typography textColor="primary.softBg">دلتا</Typography>، لدينا منظومة
-        متكاملة لمكافحة جميع الحشرات
+        <Typography textColor="primary.softBg">دلتا</Typography>، يوجد منظومة
+        متكاملة بواسطة فنيين متخصصين
       </Typography>
       <Typography fontSize="lg" textColor="text.secondary" lineHeight="lg">
-        لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-        ويُستخدم في صناعات
+        لمكافحة الصراصير و تعقيم المساكن, القرى السياحية, مصانع اغذية, المطاعم
+        المطابخ, الحمامات بأحدث الطرق, النتائج فورية و آمنه.{" "}
       </Typography>
       <Button
         component="a"

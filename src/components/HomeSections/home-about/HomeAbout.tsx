@@ -1,6 +1,7 @@
 import React from "react";
 import TowSideLayout from "../../tow-columns-layout/TowColumnsLayout";
 import { Box, Button, Chip, Divider, Typography } from "@mui/joy";
+import Link from "next/link";
 
 function HomeAbout() {
   return (
@@ -35,8 +36,9 @@ function HomeAbout() {
           متكاملة لمكافحة جميع الحشرات
         </Typography>
         <Typography fontSize="lg" textColor="text.secondary" lineHeight="lg">
-           المطابع ودور النشر. كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ
-          القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل
+          لدينا خبرة في مكافحة الحشرات، وتصنيع الاسمدة و المعقمات و تصنيع تصنيع
+          أسمدة عضوية نيتروجينية، إزالة املاح من خطوط مياه البطاريات النبل و
+          تنظيفها من الشوائب و املاح
         </Typography>
         <Box
           sx={{
@@ -47,7 +49,12 @@ function HomeAbout() {
             "& > *": { flex: "auto" },
           }}
         >
-          <Button size="lg" variant="outlined">
+          <Button
+            size="lg"
+            variant="outlined"
+            component={Link}
+            href="/services"
+          >
             خـدمـتـنـا
           </Button>
         </Box>

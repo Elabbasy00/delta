@@ -51,7 +51,7 @@ function TowSideLayout({ img, reversed, children, withRadius }: Props) {
             gap: "2rem",
           },
           [`& .${typographyClasses.root}`]: {
-            textWrap: "balance",
+            // textWrap: "balance",
           },
         })}
       >
@@ -82,7 +82,9 @@ function TowSideLayout({ img, reversed, children, withRadius }: Props) {
           alt="Programming"
           priority
           quality={100}
-          fill
+          sizes="100vw"
+          width={100}
+          height={100}
           style={{
             width: "100%",
             height: "100%",

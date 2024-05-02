@@ -9,14 +9,14 @@ import {
   Textarea,
 } from "@mui/joy";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 function ContactForm() {
   const [info, setInfo] = useState({
     first_name: "",
     last_name: "",
     email: "",
-    company: "",
-    subject: "",
+    phone_number: "",
     message: "",
   });
   const onChange = (
@@ -27,31 +27,33 @@ function ContactForm() {
     setInfo({ ...info, [e.target.name]: e.target.value });
   };
 
-  //   const onSubmit = async (e: React.FormEvent) => {
-  //     e.preventDefault();
-  //     const res = fetch("/api/contact", {
-  //       method: "post",
-  //       body: JSON.stringify(info),
-  //     })
-  //       .then((e) => {
-  //         toast.success("We Recived Your Message!");
-  //         setInfo({
-  //           first_name: "",
-  //           last_name: "",
-  //           email: "",
-  //           company: "",
-  //           subject: "",
-  //           message: "",
-  //         });
-  //       })
-  //       .catch((e) => toast.error("Please Fill All fields.."));
-  //   };
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const res = await fetch("/api/contact", {
+      method: "post",
+      body: JSON.stringify(info),
+    });
+    const data = await res.json();
+    if (res.ok) {
+      toast.success("We Recived Your Message!");
+      setInfo({
+        first_name: "",
+        last_name: "",
+        email: "",
+        phone_number: "",
+        message: "",
+      });
+    } else {
+      console.log(data);
+      toast.error("Please Fill All fields..");
+    }
+  };
 
   return (
     <Sheet
       sx={{ mt: 7, borderRadius: "20px", px: 3, py: 5, boxShadow: "xl" }}
       component="form"
-      //   onSubmit={onSubmit}
+      onSubmit={onSubmit}
     >
       <Grid container spacing={2}>
         <Grid md={6} xs={12}>
@@ -83,7 +85,7 @@ function ContactForm() {
             <FormLabel>رقم الموبيل</FormLabel>
             <Input
               onChange={onChange}
-              value={info.company}
+              value={info.phone_number}
               name="phone_number"
               placeholder="رقم الموبيل"
               size="lg"
