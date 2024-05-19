@@ -133,13 +133,13 @@ function Navbar() {
                   <MenuItem component={Link} href="/">
                     الـرئـيـسـيـة
                   </MenuItem>
-                  <MenuItem component={Link} href="/about-us">
+                  <MenuItem component={Link} href="/about">
                     مـن نـحـن
                   </MenuItem>
                   <MenuItem component={Link} href="/services">
                     خـدمـاتـنـا
                   </MenuItem>
-                  <MenuItem component={Link} href="/contact-us">
+                  <MenuItem component={Link} href="/contact">
                     اتـصـل بـنـا
                   </MenuItem>
                 </Menu>

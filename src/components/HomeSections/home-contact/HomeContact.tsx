@@ -4,12 +4,12 @@ import ContactForm from "../../contact-form/ContactForm";
 
 function HomeContact() {
   return (
-    <Container>
+    <Container sx={{ overflow: "hidden" }}>
       <Box
         sx={{
           bgcolor: "primary.solidBg",
           borderRadius: "4px 35px 4px 35px",
-          paddingX: { xs: "10px", md: "40px" },
+          paddingX: { xs: "5px", md: "40px" },
           paddingY: "40px",
           textAlign: "center",
           display: "flex",
@@ -28,11 +28,17 @@ function HomeContact() {
             maxWidth: "20ch",
           }}
         >
-          <Chip size="lg" sx={{ color: "#fff" }} variant="soft" color="primary">
+          <Chip
+            size="lg"
+            sx={{ color: "#fff", display: { xs: "none", md: "flex" } }}
+            variant="soft"
+            color="primary"
+          >
             اطلب خدمتك
           </Chip>
           <Divider
             sx={{
+              display: { xs: "none", md: "block" },
               width: 100,
               bgcolor: "primary.softBg",
               height: "2px",

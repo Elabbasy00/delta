@@ -18,9 +18,13 @@ function HorizontalIconCard({
         bgcolor: "transparent",
         direction: "ltr !important",
         textAlign: "left!important",
+        overflow: "hidden",
       }}
     >
-      <AspectRatio ratio="1" sx={{ width: 60 }}>
+      <AspectRatio
+        ratio="1"
+        sx={{ width: 60, display: { xs: "none", md: "block" } }}
+      >
         <Image
           src={item.img}
           width={0}
@@ -48,6 +52,7 @@ function HorizontalIconCard({
             direction: "rtl !important",
             textAlign: "left!important",
           }}
+          fontSize="clamp(0.9rem, 1.3636rem + 2.1818vw, 1rem)"
           level="body-lg"
           aria-describedby="card-description"
         >

@@ -22,6 +22,7 @@ function TowSideLayout({ img, reversed, children, withRadius }: Props) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        overflow: "hidden",
         pt: 15,
         pb: 7,
         gap: 4,

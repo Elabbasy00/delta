@@ -33,7 +33,13 @@ function page({ params }: { params: { slug: string } }) {
           {service?.name}
         </Typography>
         <Typography>{service?.desc}</Typography>
-        <Box sx={{ display: "flex", gap: 2 }}>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 2,
+            flexDirection: { xs: "column", sm: "row" },
+          }}
+        >
           <Button
             component="a"
             href="https://wa.me/+201062347769"

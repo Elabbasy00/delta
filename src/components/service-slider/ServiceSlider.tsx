@@ -29,6 +29,24 @@ function ServiceSlider() {
           prevEl: ".services-btn-prev",
         }}
         modules={[Navigation, Pagination]}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 2,
+          },
+          425: {
+            slidesPerView: 1.5,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        }}
       >
         {services.slice(0, 5).map((item) => (
           <SwiperSlide key={item.id}>

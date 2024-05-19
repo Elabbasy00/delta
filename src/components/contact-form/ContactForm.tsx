@@ -51,7 +51,13 @@ function ContactForm() {
 
   return (
     <Sheet
-      sx={{ mt: 7, borderRadius: "20px", px: 3, py: 5, boxShadow: "xl" }}
+      sx={{
+        mt: 7,
+        borderRadius: "20px",
+        px: 3,
+        py: 5,
+        boxShadow: "xl",
+      }}
       component="form"
       onSubmit={onSubmit}
     >
