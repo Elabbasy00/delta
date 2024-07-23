@@ -4,10 +4,11 @@ import SwiperComponent from "../swiper-component/SwiperComponent";
 import { services } from "@/src/data/data";
 import { SwiperSlide } from "swiper/react";
 import ServiceCard from "../service-card/ServiceCard";
-import { Box, Container } from "@mui/joy";
+import { Box, Button, Container } from "@mui/joy";
 
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css/pagination";
+import Link from "next/link";
 function ServiceSlider() {
   return (
     <Container
@@ -54,6 +55,17 @@ function ServiceSlider() {
           </SwiperSlide>
         ))}
       </SwiperComponent>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Button component={Link} href="/services" size="lg" variant="outlined">
+          اعرف اكثر
+        </Button>
+      </Box>
     </Container>
   );
 }

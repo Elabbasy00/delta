@@ -11,12 +11,12 @@ function Hero() {
         fontWeight="lg"
         fontSize="clamp(1.875rem, 1.3636rem + 3.1818vw, 4rem)"
       >
-        <Typography textColor="primary.softBg">دلتا</Typography>، يوجد منظومة
-        متكاملة بواسطة فنيين متخصصين
+        <Typography textColor="primary.softBg">دلتا</Typography>، يوجد لدينا
+        منظومة متكاملة من فنيين متخصصين
       </Typography>
       <Typography fontSize="lg" textColor="text.secondary" lineHeight="lg">
-        لمكافحة الصراصير و تعقيم المساكن, القرى السياحية, مصانع اغذية, المطاعم
-        المطابخ, الحمامات بأحدث الطرق, النتائج فورية و آمنه.{" "}
+        لمكافحة الصراصير و تعقيم المساكن, القرى السياحية, مصانع ألاغذية,
+        المطاعم, المطابخ, الحمامات بأحدث الطرق, النتائج فورية و آمنة.
       </Typography>
       <Button
         component="a"
